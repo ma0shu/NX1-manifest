@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="ma0shu" fetch="https://github.com/ma0shu/" />
+
+  <remote name="infinity"
+          fetch="https://github.com/ProjectInfinity-X/" />
+  <remote name="ma0shu"
+          fetch="https://github.com/ma0shu/" />
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <include name="default.xml" remote="infinity" revision="refs/heads/16" />
+
   <project path="vendor/overlay/bluefox" name="Bluefox-NX1-Overlay" remote="ma0shu" revision="main" />
+  
   <project path="patches/personal" name="NX1-patches" remote="ma0shu" revision="main" />
+  
+  <project path="vendor/mediatek/ims" name="XagaForge/android_vendor_mediatek_ims" remote="github" revision="16" />
+
 </manifest>
