@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
   <remote name="infinity"
           fetch="https://github.com/ProjectInfinity-X/"
           revision="refs/heads/16" />
-
-  <include name="default.xml" remote="infinity" />
-
-  <remote name="ma0shu"
-          fetch="https://github.com/ma0shu/" />
-
-  <project path="vendor/overlay/bluefox" name="Bluefox-NX1-Overlay" remote="ma0shu" revision="main" />
-  <project path="patches/personal" name="NX1-patches" remote="ma0shu" revision="main" />
-
+  <include name="manifest" remote="infinity" />
+  <include name="nx1.xml" />
 </manifest>
